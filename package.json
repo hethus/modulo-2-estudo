@@ -1,0 +1,28 @@
+{
+  "name": "modulo-2-estudo",
+  "version": "1.0.0",
+  "description": "criação de uma pokedex com auxilio dos videos da blue",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e js,html,css,ejs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hethus/modulo-2-estudo.git"
+  },
+  "author": "Giovanne Berteli Comba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hethus/modulo-2-estudo/issues"
+  },
+  "homepage": "https://github.com/hethus/modulo-2-estudo#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.17.3"
+  }
+}
