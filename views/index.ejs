@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
     <title>estudo - Home</title>
 </head>
 <body>
@@ -14,11 +15,11 @@
         <% pokedex.forEach(pokemon => { %>
          
 
-        <div>
+        <div class="card">
+            <div class="nome__do__pokemon"><%= pokemon.nome %> </div>
             <img src="<%= pokemon.imagem %> " alt="">
-            <h2><%= pokemon.nome %> </h2>
-            <p><%= pokemon.id %> </p>
-            <p><%= pokemon.tipo %> </p>
+            <div class="id__do__pokemon"><%= pokemon.id %> </div>
+            <div class="tipo__do__pokemon"><%= pokemon.tipo %> </div>
         </div>
         <% }) %>
 

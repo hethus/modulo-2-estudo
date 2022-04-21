@@ -1,5 +1,11 @@
 import express from "express";
+import path from "path";
+
+const __dirname = path.resolve(path.dirname(''));
 const app = express();
+
+app.set("view engine", "ejs");
+app.use(express.static(path.join(__dirname, "public")));
 
 const pokedex = [
     {
@@ -25,14 +31,13 @@ const pokedex = [
     }
 ]
 
-app.set("view engine", "ejs");
+const port = 3001;
+app.listen(port, () => console.log(`running in ${port}`));
 
 app.get("/", (req, res) => {
     res.render("index", {pokedex});
 });
 
-app.get("/home", (req, res) => {
-    res.send("");
+app.get("/detalhes", (req, res) => {
+    res.render("detalhes");
 });
-
-app.listen(3000, () => console.log('terminal rodando em http://localhost:3000'));
