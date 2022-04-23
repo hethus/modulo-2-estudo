@@ -17,4 +17,6 @@ Ferramentas usadas no projeto:
 
 ## Contato
 
-<a href="https://www.linkedin.com/in/giovanne-berteli-comba-0935bb230/" target="blank">Linkedin</a>
+<a href="https://www.linkedin.com/in/giovanne-berteli-comba-0935bb230/" target="blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+</a>
