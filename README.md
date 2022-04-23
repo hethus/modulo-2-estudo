@@ -13,7 +13,8 @@ Ferramentas usadas no projeto:
 
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
 ## Contato
 
-
-[Linkedin](https://www.linkedin.com/in/giovanne-berteli-comba-0935bb230/)
+<a href="https://www.linkedin.com/in/giovanne-berteli-comba-0935bb230/" target="_blank">Linkedin</a>
