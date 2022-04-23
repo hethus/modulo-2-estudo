@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
     <title>estudo - Home</title>
-</head>
-<body>
-    <h1>Pokedex</h1>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+      <h1>Pokédex</h1>
 
-    <section>
-
+      <section id="pokemons">
         <% pokedex.forEach(pokemon => { %>
-         
-
-        <div class="card">
-            <div class="nome__do__pokemon"><%= pokemon.nome %> </div>
-            <img src="<%= pokemon.imagem %> " alt="">
-            <div class="id__do__pokemon"><%= pokemon.id %> </div>
-            <div class="tipo__do__pokemon"><%= pokemon.tipo %> </div>
-        </div>
+        <a href="/detalhes/<%= pokemon.id %> ">
+          <article class="card">
+            <div class="nome__do__pokemon"><%= pokemon.nome %></div>
+            <div class="card_image">
+              <img
+                src="<%= pokemon.imagem %> "
+                alt="Imagem do pokemon <%= pokemon.nome %> "
+              />
+            </div>
+            <div class="status">
+              <div><%= pokemon.id %></div>
+              <div><%= pokemon.tipo %></div>
+            </div>
+          </article>
+        </a>
         <% }) %>
+      </section>
+    </main>
 
-    </section>
-
-</body>
+    <%- include('./partials/footer.ejs') %>
+  </body>
 </html>

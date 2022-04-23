@@ -38,6 +38,12 @@ app.get("/", (req, res) => {
     res.render("index", {pokedex});
 });
 
-app.get("/detalhes", (req, res) => {
-    res.render("detalhes");
+app.get("/detalhes/:id", (req, res) => {
+    let poke = []
+    pokedex.filter((element) => {
+        if(element.id == req.params.id){
+            poke.push(element); 
+        }
+    });
+    res.render("detalhes", {poke});
 });
