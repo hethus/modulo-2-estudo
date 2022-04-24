@@ -45,6 +45,55 @@ main {
     padding: 10px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 16px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgb(141, 164, 37);
+}
+
+form fieldset fieldset{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    border: none;
+}
+
+form fieldset#field_main {
+    border: 10px solid rgb(164, 37, 37);
+}
+
+form legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border: 5px solid rgb(164, 37, 37);
+    background-color: rgb(141, 164, 37);
+}
+
+section#detalhes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 200px;
+    text-align: center;
+}
+
+table td{
+    border: 1px solid #000;
+}
+
 section#pokemons {
     display: flex;
     flex-wrap: wrap;
